@@ -1,0 +1,23 @@
+name: plant             # Plant image classifier
+channels:
+  - pytorch             # Install from pytorch channel first to avoid incompatibilities
+  - defaults
+dependencies:
+  - python=3.8.12
+  - cudatoolkit=11.3
+  - dash=1.19.0
+  - ipywidgets=7.6.5    # Required for progress bars when downloading torchvision models in Jupyter Lab (no ipywidgets causes a crash).
+  - jupyterlab=3.2.9
+  - numpy=1.21.2
+  - pandas=1.4.1
+  - pillow=8.4.0
+  - pip=21.2.4
+  - plotly=5.1.0
+  - pytorch
+  - scipy=1.7.3
+  - tabulate=0.8.9      # Required by pandas.Dataframe.to_markdown()
+  - torchvision
+  - pip:
+    - nbclassic>=0.2.8  # Required to avoid some bugs with latest jupyterlab.
+                        # Ref: https://stackoverflow.com/questions/68121775/jupyterlab-is-broken
+
