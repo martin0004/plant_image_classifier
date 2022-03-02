@@ -7,9 +7,43 @@ This is the 2nd project in Udacity's Introduction to Machine Learning with PyTor
 
 <img src="images/problem.png"/> 
 
-# Table of Content
 
-(to do...)
+---
+# TABLE OF CONTENTS
+
+SETUP
+
+- [Install](#install)
+- [Usage](#usage)
+- [Project Files](#project-files)
+
+PROBLEM DEFINITION
+
+- [Problem](#problem)
+- [Requirements](#requirements)
+
+DATA
+
+- [Input Data](#input-data)
+- [Datasets](#datasets)
+- [Data Exploration](#data-exploration)
+- [Data Cleaning](#data-cleaning)
+
+DESIGN
+
+- [Pipeline](#pipeline)
+- [Data Loader](#data-loader)
+- [Neural Network](#neural-network)
+
+IMPLEMENTATION
+
+- [train.py](#train.py)
+- [test.py](#test.py)
+
+CONCLUSION
+
+- [Possible Improvements](#possible-improvements)
+- [References](#references)
 
 ---
 # SETUP
@@ -189,9 +223,6 @@ The validation and testing datasets are both pre-processed with the same transfo
 
 # Neural Network
 
-### Architecture
-
-
 The neural network developed in this project is made of two parts.
 
 - A **feature extractor**, which is selected from the list of pre-trained networks available in PyTorch [4] and mostly made of convolutional layers. The following pre-trained models can be selected by the user.
@@ -233,8 +264,8 @@ The learning rate, number of hidden units and number of epochs can be specified 
 You can also specify which pre-trained neural network to use for feature extraction.
 
 ```
-(plant) $ python3 train.py --arch alexenet                              # Default
-(plant) $ python3 train.py --arch densent
+(plant) $ python3 train.py --arch alexnet                               # Default
+(plant) $ python3 train.py --arch densenet
 (plant) $ python3 train.py --arch vgg16
 ```
 
@@ -292,4 +323,4 @@ https://www.robots.ox.ac.uk/~vgg/data/flowers/102/index.html
 
 [5] Alex Lenail on Github, NN-SVG, https://github.com/alexlenail/NN-SVG
 
-[GROKKING] Serrano, Luis, Grokking Machine Learning, Manning Editions.
+[6] Serrano, Luis, Grokking Machine Learning, Manning Editions.
