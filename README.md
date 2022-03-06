@@ -251,7 +251,7 @@ The neural network developed in this project is made of two parts.
 ---
 # IMPLEMENTATION
 
-The pipeline described above (data loader & neural network) was implemented into 2 command line tools: `train.py` and `test.py`.
+The pipeline described above (data loader & neural network) was implemented into 2 command line tools: `train.py` and `predict.py`.
 
 ### train.py
 
@@ -288,7 +288,7 @@ Following training, learning curves are displayed in the browser.
 
 <img src="images/learning-curves.png" width=600/> 
 
-### test.py
+### predict.py
 
 This tool predicts the most probable species for a flower image by loading the model trained above.
 
