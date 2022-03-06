@@ -175,9 +175,9 @@ The flower images were already split into training, validation and testing datas
 
 Histograms below show the distributions of each class per dataset. It can be seen the train & valid datasets contain 10 instances of each class, while the test dataset is more randomly distributed.
 
-<img src="images/class-count-train.png"/>
-<img src="images/class-count-valid.png"/>
-<img src="images/class-count-test.png"/>
+<img src="images/class-count-train.png" height=250/>
+<img src="images/class-count-valid.png" height=250/>
+<img src="images/class-count-test.png" height=250/>
 
 
 Most of image are relatively small (max size ~ 120 kB).
@@ -186,8 +186,17 @@ Interestingly, most images seem to have a side which is 500 pixels (either width
 
 Most images are smaller than 500x1200 or 1200x500.
 
-<img src="images/image-memory-sizes.png" height=350/>
-<img src="images/image-width-height.png" height=350/>
+
+<table>
+    <tr>
+        <td>
+            <img src="images/image-memory-sizes.png"/>
+        </td>
+        <td>
+            <img src="images/image-width-height.png"/>
+        </td>
+    <tr>
+<table>
 
 # Data Cleaning
 
